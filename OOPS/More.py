@@ -3,7 +3,7 @@
 class Car:
     def __init__(self, model:str, year=2000):
         #Check the received arguements
-        assert 2025 > year >= 2000 , f"I want car from 2000 to 2025 not {year}"
+        assert 2025 > year >= 2000 , f"I want car from 2000 to 2025 not {year}" 
 
 
         # Assign to self object
@@ -15,7 +15,7 @@ class Car:
     def price(self):  
         return self.year * 1000          #function inside class called methods
 
-rollsRoyce = Car('ghost', 1000)
+rollsRoyce = Car('ghost', 2000)
 print(rollsRoyce.price())
 
 BMW = Car('M4')
