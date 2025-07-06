@@ -6,3 +6,6 @@ class node:
 class Linked_list:
     def __init__(self):
         self.head = None
+
+    def append(self, value):
+        pass
