@@ -9,3 +9,6 @@ class Linked_list:
 
     def append(self, value):
         pass
+
+    def pop_item():
+        pass
