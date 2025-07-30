@@ -1,2 +1,2 @@
-l = list(range(10,1,-2))
+l = list(range(10,1,-3))
 print(l)
