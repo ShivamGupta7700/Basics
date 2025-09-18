@@ -20,11 +20,16 @@ def get_connection():
 connection = get_connection()
 cur = connection.cursor()
 
-name = input('Enter the name >>>> ')
-sql = f"SELECT * FROM students WHERE name = '{name}'"
-cur.execute(sql)
-for row in cur.fetchall():
-    print(row)
+# name = input('Enter the name >>>> ')
+# sql = f"SELECT * FROM students WHERE name = '{name}'"
+# cur.execute(sql)
+# for row in cur.fetchall():
+#     print(row)
 
+cur.execute("SELECT * FROM students WHERE name = %s",('Siran Kaur',))
+# rows = cur.fetchone()
+# print("Result:", rows)
+# # print("Result:", rows[0]) # error
+# print(cur.rowcount)
 cur.close()
 connection.close()
