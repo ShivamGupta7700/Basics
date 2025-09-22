@@ -33,8 +33,6 @@ while curr:
     print(curr)
     curr = curr.next 
 
-
-
 # Now for displaying linked list - O(n)
 def display(head):
     curr = head
